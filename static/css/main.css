@@ -1,0 +1,140 @@
+.header {
+  padding: 85px; 
+  text-align: center; 
+  background-image: url("/static/images/El-capitan.png");
+  color: #ffffff; 
+}
+
+/* Increase the font size of the <h1> element */
+.header h1 {
+  font-size: 50px;
+  -webkit-text-stroke-width: 1.75px;
+  -webkit-text-stroke-color: black;
+}
+
+.header p {
+  font-size: 25px;
+}
+
+/* Style the top navigation bar */
+.nav {
+  overflow: hidden; 
+  background-color: #333333; 
+}
+
+/* Style the navigation bar links */
+.nav a {
+  float: left; 
+  display: block; /* Change the display to block */
+  color: white; 
+  text-align: center; 
+  padding: 14px 20px; 
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link for quiz */
+.nav a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.nav a:hover {
+  background-color: #dddddd; /* Grey background color */
+  color: black; /* Black text color */
+}
+
+/* Ensure proper sizing for consistent layout */
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.left {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; 
+  padding: 20px; 
+  text-align: center;
+  list-style-position: inside;
+}
+
+/* Main column */
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: #ffffff; 
+  padding: 20px; 
+  text-align: center;
+  list-style-position: inside;
+}
+
+/* Style for quiz */
+.main h2 {
+  float: none;
+  font-size: 15px;
+  display: block;
+  padding: 14px 20px;
+}
+.main h2:hover {
+  background-color: #f1f1f1;
+}
+/* When the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* When the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* General Footer Styles */
+.footer {
+  padding: 20px; 
+  text-align: center; 
+  background: #dddddd; 
+  font-family: Arial, sans-serif; 
+  color: #333333; 
+}
+
+/* Contact Information */
+.footer h2 {
+  margin-bottom: 10px; 
+  font-size: 1.5rem; 
+}
+
+.footer p {
+  margin: 5px 0; 
+  font-size: 1rem; 
+}
+
+.footer a {
+  color: #007BFF; 
+  text-decoration: none; 
+}
+
+.footer a:hover {
+  text-decoration: underline; 
+}
+
+/* Social Media Icon */
+.footer .social-icon {
+  width: 30px; 
+  height: 30px; 
+  margin-top: 10px; 
+}
+
+.footer .social-icon:hover {
+  opacity: 0.8; 
+}

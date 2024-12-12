@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	{% block head %}{% endblock %}
+</head>
+<body>
+
+<div class="header">
+	{% block header %}{% endblock %}
+</div>
+	
+<div class="nav">
+  <a href="/">Home</a>
+  <a href="/techniques/">Techniques</a>
+  <a href="/equipment/">Equipment</a>
+  <a href="/grading/">Grading</a>
+  <a href="/types/">Types</a>
+  <a href="/game/" class="right">Quiz!</a>
+</div>
+	
+<div class="row">
+  <div class="left">{% block left %}{% endblock %}</div>
+  <div class="main">{% block main %}{% endblock %}</div>
+</div>
+	
+<div class="footer">
+	<div class="contact-info">
+	  <p>--- Contact Information: <a href="mailto:robert.a.smales@gmail.com">robert.a.smales@gmail.com</a> ---</p>
+	</div>
+	<div class="social-media">
+	  <a href="https://www.instagram.com/robert_smalesx/" target="_blank">
+		<img src="/static/images/Instagram-icon.png" alt="Instagram" class="social-icon" />
+	  </a>
+	</div>
+	<p>Made by Robert Smales</p>
+</div>
+
+</body>
+</html>

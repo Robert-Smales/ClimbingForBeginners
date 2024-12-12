@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Test Your Knowledge!</title>
+{% endblock %}
+
+{% block header %}
+<h1>Quiz Time!!</h1>
+<p>Hopefully you have been paying attention ;)</p>
+{% endblock %}
+
+{% block left %}
+<h1>Question {{ number }}</h1>
+<p> {{ text }} </p>
+{% endblock %}
+
+{% block main %}
+
+    {% for answer in answers %}
+    <h2><a href='/game/?answer={{loop.index}}'>{{answer}}</a></h2>
+    {% endfor %}
+
+{% endblock %}
+
+
+
